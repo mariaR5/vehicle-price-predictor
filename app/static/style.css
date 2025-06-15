@@ -1,0 +1,288 @@
+/* -------------------- Global Styles -------------------- */
+body {
+    margin: 0;
+    font-family: 'Gotham_Medium_Italic', Inter, sans-serif;
+    background-image: url('images/mainpg_bg2.png');
+    background-size: cover;
+    background-position: 20% 86%;
+    background-repeat: no-repeat;
+    color: #FFF6E5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@font-face {
+    font-family: 'Gotham_Ultra_Italic';
+    src: url('fonts/Gotham_Ultra_Italic.ttf') format('truetype');
+}
+
+/* @font-face {
+    font-family: 'Gotham_Medium_Italic';
+    src: url('../fonts/Gotham_Medium_Italic.ttf') format('truetype');
+} */
+
+
+/* -------------------- Headings -------------------- */
+h1, h2 {
+    font-family: 'Gotham_Ultra_Italic', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-top: 4.7%;
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 1.7em;
+    font-weight: lighter;
+    margin: 5px 0;
+}
+
+
+/* -------------------- Text -------------------- */
+p {
+    color: #FFF6E5;
+    font-size: larger;
+    margin-bottom: 30px;
+}
+
+
+/* -------------------- Button -------------------- */
+button {
+    background-color: #FF3700;
+    color: white;
+    padding: 13px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 215px;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1.2s;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+button:hover {
+    background-color: #FFF6E5;
+    color: #FF3700;
+}
+
+.start-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* -------------------- Animations -------------------- */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUpFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes zoomInResult {
+    0% {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* -------------------- Page 1: Landing -------------------- */
+.page1 {
+    padding: 40px 20px;
+    max-width: 900px;
+    width: 100%;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.content,
+.form-head,
+.result-content {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUpFadeIn 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+
+/* -------------------- Page 2: Form -------------------- */
+.page2 {
+    background-image: url('images/formpg.png');
+    background-size: cover;
+    background-position: 20% 10%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45%;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+.input-group.full-width {
+    flex: 1 1 100%;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #FFF6E5;
+    text-align: left;
+}
+
+/* Inputs and Selects */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    background-color: #FFF6E5;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Gotham_Medium_Italic', Inter, sans-serif;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: 2px solid #FF4500;
+}
+
+/* Submit Button */
+form button[type="submit"] {
+    display: block;
+    width: 180px;
+    margin: 30px auto 0 auto;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+
+/* Animated Inputs */
+.animated-input {
+    opacity: 0;
+    animation: popUp 0.5s ease-out forwards;
+}
+
+
+/* -------------------- Page 3: Result -------------------- */
+.page3 {
+    background-image: url('images/lastpg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding: 5% 10px 0px 10px;
+    box-sizing: border-box;
+}
+
+.result-head {
+    padding: 0 20% 2%;
+    font-size: 4.2em;
+    margin-top: 0;
+}
+
+.result-box {
+    background-color: #FFF6E5;
+    color: #292929;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    width: 300px;
+    margin: 8px auto 0 auto;
+    animation: zoomInResult 1s ease-out 0.5s both;
+}
+
+.note {
+    font-size: 0.7em;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 25%;
+    margin-top: auto;
+    margin-bottom: 30px;
+}
+
+.footnote {
+    font-size: 0.5em;
+    color: #aaa;
+    margin-bottom: 20px;
+}
