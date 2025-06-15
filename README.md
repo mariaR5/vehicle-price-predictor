@@ -49,3 +49,23 @@ While the core of this project is the ML model, a clean web interface was develo
   - Animated result display
 
 ---
+
+##  Getting Started
+
+### Installation
+
+```bash
+git clone https://github.com/yourusername/vehicle-price-prediction.git
+cd vehicle-price-prediction
+pip install -r requirements.txt
+```
+---
+
+### Run the Flask App
+
+```bash
+python app/app.py
+```
+---
+### Open your browser and visit:
+http://127.0.0.1:5000
