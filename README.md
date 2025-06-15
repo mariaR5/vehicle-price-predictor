@@ -1,6 +1,8 @@
-# Vehicle Price Prediction Web App
+# Vehicle Price Prediction Machine Learning Model
 
-This is a full-stack machine learning web application that predicts the price of a vehicle based on its specifications. Users can input details like make, model, year, fuel type, mileage, transmission, and more, and get an estimated price using a trained XGBoost regression model.
+This is a full-stack *machine learning* web application that predicts the price of a vehicle based on its specifications. Users can input details like make, model, year, fuel type, mileage, transmission, and more, and get an estimated price using a trained XGBoost regression model.
+
+----
 
 ## Tech Stack
 
