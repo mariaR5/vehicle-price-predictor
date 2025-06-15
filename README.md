@@ -10,7 +10,7 @@ The goal of this project is to build a robust regression model capable of estima
 
 ---
 
-## 🧠 Machine Learning Pipeline
+## Machine Learning Pipeline
 
 - **Model**: `XGBoost Regressor`
 - **Target Variable**: `Price` (log-transformed for normalization)
@@ -23,7 +23,7 @@ The goal of this project is to build a robust regression model capable of estima
   - MAPE (Mean Absolute Percentage Error)
   - RMSLE (Root Mean Squared Log Error)
 
-### 🔬 Model Training Steps
+### Model Training Steps
 
 1. Data exploration and cleaning
 2. Feature engineering
@@ -36,7 +36,7 @@ The goal of this project is to build a robust regression model capable of estima
 
 ---
 
-## 🖥️ Web Interface
+## Web Interface
 
 While the core of this project is the ML model, a clean web interface was developed for easy usage and demo purposes.
 
