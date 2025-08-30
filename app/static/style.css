@@ -31,7 +31,8 @@ body {
 
 
 /* -------------------- Headings -------------------- */
-h1, h2 {
+h1,
+h2 {
     font-family: 'Gotham_Ultra_Italic', sans-serif;
     font-weight: bold;
     margin-bottom: 20px;
@@ -111,6 +112,7 @@ button:hover {
         opacity: 0;
         transform: translateY(20px) scale(0.95);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -122,6 +124,7 @@ button:hover {
         transform: scale(0.6);
         opacity: 0;
     }
+
     100% {
         transform: scale(1);
         opacity: 1;
