@@ -55,7 +55,7 @@ While the core of this project is the ML model, a clean web interface was develo
 ![Input Page](screenshots/input.png)
 
 ### Output Page
-![Output Page](screenshots/output.png)
+![Output Page](screenshots/ouput.png)
 
 ---
 
