@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,14 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 </head>
+
 <body>
     <!-- Page 1: Landing -->
     <section id="landing" class="page1">
         <div class="content">
             <h1>PREDICT YOUR CAR'S <br>PRICE INSTANTLY</h1>
-            <p><em>Machine Learning Vehicle Price Estimator—Get Accurate Price<br>Predictions Based On Your Car’s Details In Seconds.</em></p>
+            <p><em>Machine Learning Vehicle Price Estimator—Get Accurate Price<br>Predictions Based On Your Car’s
+                    Details In Seconds.</em></p>
         </div>
 
         <button onclick="goToForm()" class="start-btn">GET STARTED</button>
@@ -22,9 +25,10 @@
     <section id="form-page" class="page2">
         <div class="form-head">
             <h2>ENTER YOUR CAR DETAILS</h2>
-            <p><em>Fill in the fields below. Your information will be used by our machine learning model to generate a predicted price.</em></p>
+            <p><em>Fill in the fields below. Your information will be used by our machine learning model to generate a
+                    predicted price.</em></p>
         </div>
-        
+
         <form id="car-form">
             <div class="input-group full-width animated-input" style="animation-delay: 0.5s;">
                 <label for="car-name">Name of the Car</label>
@@ -71,23 +75,23 @@
 
             <div class="input-group animated-input" style="animation-delay: 1.2s;">
                 <label for="transmission">Transmission:</label>
-                    <select id="transmission" name="transmission" required>
-                        <option value="">-- Select Transmission --</option>
-                        <option value="Automatic">Automatic</option>
-                        <option value="1-Speed Automatic">1-Speed Automatic</option>
-                        <option value="2-Speed Automatic">2-Speed Automatic</option>
-                        <option value="5-Speed Automatic">5-Speed Automatic</option>
-                        <option value="6-Speed Automatic">6-Speed Automatic</option>
-                        <option value="7-Speed Automatic">7-Speed Automatic</option>
-                        <option value="8-Speed Automatic">8-Speed Automatic</option>
-                        <option value="9-Speed Automatic">9-Speed Automatic</option>
-                        <option value="10-Speed Automatic">10-Speed Automatic</option>
-                        <option value="CVT">CVT</option>
-                        <option value="DSG">DSG</option>
-                        <option value="Manual">Manual</option>
-                        <option value="Dual Clutch">Dual Clutch</option>
-                        <option value="Other">Other</option>
-                    </select>
+                <select id="transmission" name="transmission" required>
+                    <option value="">-- Select Transmission --</option>
+                    <option value="Automatic">Automatic</option>
+                    <option value="1-Speed Automatic">1-Speed Automatic</option>
+                    <option value="2-Speed Automatic">2-Speed Automatic</option>
+                    <option value="5-Speed Automatic">5-Speed Automatic</option>
+                    <option value="6-Speed Automatic">6-Speed Automatic</option>
+                    <option value="7-Speed Automatic">7-Speed Automatic</option>
+                    <option value="8-Speed Automatic">8-Speed Automatic</option>
+                    <option value="9-Speed Automatic">9-Speed Automatic</option>
+                    <option value="10-Speed Automatic">10-Speed Automatic</option>
+                    <option value="CVT">CVT</option>
+                    <option value="DSG">DSG</option>
+                    <option value="Manual">Manual</option>
+                    <option value="Dual Clutch">Dual Clutch</option>
+                    <option value="Other">Other</option>
+                </select>
             </div>
 
             <div class="input-group animated-input" style="animation-delay: 1.3s;">
@@ -97,18 +101,18 @@
 
             <div class="input-group animated-input" style="animation-delay: 1.4s;">
                 <label for="body">Body Type:</label>
-                    <select id="body" name="body" required>
-                        <option value="">-- Select Body Type --</option>
-                        <option value="SUV">SUV</option>
-                        <option value="Sedan">Sedan</option>
-                        <option value="Pickup Truck">Pickup Truck</option>
-                        <option value="Cargo Van">Cargo Van</option>
-                        <option value="Passenger Van">Passenger Van</option>
-                        <option value="Hatchback">Hatchback</option>
-                        <option value="Convertible">Convertible</option>
-                        <option value="Minivan">Minivan</option>
-                        <option value="Other">Other</option>
-                    </select>
+                <select id="body" name="body" required>
+                    <option value="">-- Select Body Type --</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="Pickup Truck">Pickup Truck</option>
+                    <option value="Cargo Van">Cargo Van</option>
+                    <option value="Passenger Van">Passenger Van</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="Convertible">Convertible</option>
+                    <option value="Minivan">Minivan</option>
+                    <option value="Other">Other</option>
+                </select>
             </div>
 
             <div class="input-group animated-input" style="animation-delay: 1.5s;">
@@ -150,24 +154,25 @@
 
     <!-- Page 3: Result -->
     <section id="result-page" class="page3">
-    <div class="result-content">
-        <h1 class="result-head">YOUR ESTIMATED CAR PRICE IS READY!</h1>
-        <h3>Predicted Market Value</h3>
-        <div class="result-box"></div>
-        <p class="note"><em>(Based on patterns learned from real-world vehicle data)</em></p>
-    </div>
+        <div class="result-content">
+            <h1 class="result-head">YOUR ESTIMATED CAR PRICE IS READY!</h1>
+            <h3>Predicted Market Value</h3>
+            <div class="result-box"></div>
+            <p class="note"><em>(Based on patterns learned from real-world vehicle data)</em></p>
+        </div>
 
-    <div class="button-row">
-        <button onclick="goToForm()">PREDICT AGAIN</button>
-        <button onclick="goToHome()">HOME</button>
-    </div>
+        <div class="button-row">
+            <button onclick="goToForm()">PREDICT AGAIN</button>
+            <button onclick="goToHome()">HOME</button>
+        </div>
 
-    <p class="footnote">
-        This is an estimate based on historical data and patterns learned by the model.
-        Actual market prices may vary depending on additional factors.
-    </p>
-</section>
+        <p class="footnote">
+            This is an estimate based on historical data and patterns learned by the model.
+            Actual market prices may vary depending on additional factors.
+        </p>
+    </section>
 
     <script src="{{ url_for('static', filename='main.js') }}"></script>
 </body>
+
 </html>
