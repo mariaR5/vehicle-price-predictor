@@ -46,7 +46,16 @@ While the core of this project is the ML model, a clean web interface was develo
 - **UI Features**:
   - Landing page
   - Dynamic form input
-  - Animated result display
+  - Animated result display 
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Input Page
+![Input Page](screenshots/input.png)
+
+### Output Page
+![Output Page](screenshots/output.png)
 
 ---
 
